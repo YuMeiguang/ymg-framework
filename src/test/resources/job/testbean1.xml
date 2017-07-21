@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+   <!-- <import resource="testbean2.xml"/>-->
+
+    <bean id="abc" class="com.ymg.bean.DisplayJobBean">
+        <constructor-arg index="0" value="aaaa" />
+        <constructor-arg index="1" value="group" />
+        <constructor-arg index="2" value="0 0/1 * 1/1 * ? *" />
+        <property name="baseInfo">
+            <map>
+                <entry key="aaa" value="aaa" />
+                <entry key="bbb" value="bbb" />
+                <entry key="ccc" value="ccc" />
+                <entry key="ddd" value="ddd" />
+            </map>
+        </property>
+        <property name="personName">
+            <list>
+                <value type="java.lang.String">as</value>
+                <value type="java.lang.String">as</value>
+                <value type="java.lang.String">as</value>
+                <value type="java.lang.String">as</value>
+            </list>
+        </property>
+    </bean>
+
+
+
+</beans>
